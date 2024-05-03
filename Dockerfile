@@ -1,6 +1,7 @@
 # Use the latest Ubuntu image
 FROM ubuntu:latest
-FROM python:3.12.0
+
+FROM python:3.12.3
 
 # Update and install required packages
 RUN apt-get update && apt-get install -y \
