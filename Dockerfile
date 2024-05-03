@@ -1,6 +1,6 @@
 # Use the latest Ubuntu image
 FROM ubuntu:latest
-FROM python:3.9-slim-buster
+FROM python:3.12.0
 
 # Update and install required packages
 RUN apt-get update && apt-get install -y \
