@@ -1,12 +1,13 @@
 # Use the latest Ubuntu image
 FROM ubuntu:latest
+FROM python:3.9-slim-buster
 
 # Update and install required packages
 RUN apt-get update && apt-get install -y \
     python3 \
     python3-pip
 
-RUN pip install -U virtualenv
+ 
 
 # Set the working directory
 WORKDIR /app
