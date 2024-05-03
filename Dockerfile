@@ -6,6 +6,8 @@ RUN apt-get update && apt-get install -y \
     python3 \
     python3-pip
 
+RUN pip install -U virtualenv
+
 # Set the working directory
 WORKDIR /app
 
